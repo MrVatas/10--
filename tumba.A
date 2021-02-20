@@ -1,0 +1,11 @@
+def fun (a,w,l):
+    if len(w)==l:
+        print(w)
+        return
+    if len(w)==1:
+        w+="ы"
+        fun(a,w,l)
+    else:
+        for i in a:
+            fun(a,w+i,l)
+fun("ышчо","",4)
